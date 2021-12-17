@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GoSEO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/infinito.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
@@ -46,9 +47,7 @@
                     <p>Cuando Google valora que el sitio web de una empresa es relevante y digno de aparecer entre los
                      primeros resultados, en la mente del consumidor se refleja la idea de que ese negocio es de fiar. 
                      De esta manera, los usuarios están más predispuesto a depositar su confianza, y con ella su dinero, 
-                     en una empresa que está posicionada en Google.
-                     Dos cifras a este respecto realmente contundentes: más de un 30% de los clics van al primer resultado
-                     orgánico de Google, mientras que el 95% de los usuarios nunca pasan de la primera página de resultados.</p>
+                     en una empresa que está posicionada en Google.</p>
                 </div>
             </div>
         </section>
@@ -56,70 +55,39 @@
             <div class="contenedor">
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/pagina1.jpeg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/pagina2.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/img/pagina1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/img/pagina2.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/pagina5.png" class="d-block w-100" alt="...">
+                          </div>
                         </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/pagina3.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/pagina4.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/pagina5.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/pagina6.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/pagina7.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="img/pagina8.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
-                    </div>
-                </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
             </div>
         </section>
         <section class="clientes contenedor">
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="img/card1.jpg" alt="">
+                    <img src="img/card1.jpg" alt="20">
                     <div class="contenido-texto-card">
                         <h4>Arlog</h4>
                         <p>No existíamos... y ahora el teléfono no para de sonar.</p>
@@ -181,6 +149,10 @@
         </div>
         <h2 class="titulo-final">&copy; GoSEO | Martin Dario Espino</h2>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
