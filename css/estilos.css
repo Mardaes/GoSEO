@@ -16,7 +16,7 @@ body{
 }
 
 .titulo{
-    color:darkblue;
+    color:rgb(0, 0, 0);
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -98,7 +98,7 @@ header .textos-header{
 
 .contenido-textos h3 span{
     background: rgb(52, 33, 175);
-    color: floralwhite;
+    color: rgb(255, 255, 255);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -116,44 +116,12 @@ header .textos-header{
     text-align: justify;
 }
 
-.cards{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.cards .card{
-    background: rgba(7, 7, 155, 0.856);
-    display: flex;
-    width: 40%;
-    height: 400px;
-    align-items:center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0 ,0 ,0, .5); 
-}
-
-.cards .card .img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid white;
-    display: block;
-}
-
-.cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-}
-
-.cards .cards > .contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
+.contenedor video{
+    text-align: center;
 }
 
 .about-services{
-    background: #fff;
+    background: rgb(255, 255, 255);
     padding-bottom: 30px;
 }
 
@@ -203,7 +171,7 @@ footer{
 
 .content-foo h4{
     color: #fff;
-    border-bottom: 3px solid rgba(50, 50, 168, 0.664);
+    border-bottom: 3px solid rgba(20, 111, 248, 0.829);
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -243,20 +211,6 @@ html {
 
     .imagen-port{
         width: 44%
-    }
-
-    .cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards .card{
-        width: 90%;
-    }
-
-    .cards .card:first-child{
-        margin-bottom: 30px;
     }
 
     .servicio-cont{
@@ -307,17 +261,6 @@ html {
 
     .imagen-port{
         width: 95%;
-    }
-
-    .cards .card{
-       height: 450px;
-       display: flex;
-       flex-direction: column;
-    }
-
-    .cards .card img{
-        width: 90px;
-        height: 90px;
     }
 
     .contenedor-footer{
